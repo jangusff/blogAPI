@@ -7,12 +7,12 @@ const blogAPIRouter = require('./blogAPIRouter');
 
 // log the http layer
 app.use(morgan('common'));
+app.use(express.json());
+//app.use(express.static('public'));
 
-app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
-});
+//app.get('/', (req, res) => {
+//  res.sendFile(__dirname + '/views/index.html');
+//});
 
 
 // when requests come into `/blog-posts`,
