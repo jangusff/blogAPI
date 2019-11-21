@@ -1,17 +1,28 @@
 {
-  "name": "blogapi",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "Jonathan Angus",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "morgan": "^1.9.1",
-    "uuid": "^3.3.2"
-  }
+
+   "name": "blogapi",
+
+   "version": "1.0.0",
+
+   "description": "",
+   "main": "server.js",
+
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node server.js"
+
+   },
+   "author": "Jonathan Angus",
+
+   "license": "ISC",
+   "dependencies": {
+
+      "express": "^4.17.1",
+
+       "morgan": "^1.9.1",
+
+         "uuid": "^3.3.2"
+
+    }
+
 }
