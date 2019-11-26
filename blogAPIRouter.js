@@ -47,7 +47,7 @@ router.post('/', (req, res) => {
 
 //router.put('/:id', jsonParser, (req, res) => {
 router.put('/:id', (req, res) => {
-  const requiredFields = ['id', 'title', 'content', 'author', 'publishDate'];
+  const requiredFields = ['id', 'title', 'content', 'author'];
   for (let i=0; i<requiredFields.length; i++) {
     const field = requiredFields[i];
     if (!(field in req.body)) {
@@ -62,7 +62,7 @@ router.put('/:id', (req, res) => {
     return res.status(400).send(message);
   }
   console.log(`Updating Blogpost item \`${req.params.id}\``);
-  const updatedItem = BlogPosts.update({
+  BlogPosts.update({
     id: req.params.id,
     title: req.body.title,
     content: req.body.content,
